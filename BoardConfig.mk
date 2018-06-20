@@ -19,6 +19,9 @@ FORCE_32_BIT := true
 # Inherit from msm8916-common
 include device/samsung/msm8916-common/BoardConfigCommon.mk
 
+# Allow overriding commands during build
+BUILD_BROKEN_DUP_RULES := true
+
 DEVICE_PATH := device/samsung/a5ultexx
 
 # Assert
