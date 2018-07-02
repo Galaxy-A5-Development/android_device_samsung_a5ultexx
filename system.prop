@@ -1,8 +1,4 @@
 # Audio
-ro.vendor.audio.sdk.fluencetype=fluence
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.fluence.speaker=true
 persist.audio.dirac.speaker=true
 
 # Dalvik
@@ -16,7 +12,7 @@ dalvik.vm.heapmaxfree=8m
 # Display
 ro.qualcomm.cabl=0
 ro.qualcomm.svi=1
-ro.sf.lcd_density=240
+ro.sf.lcd_density=300
 
 # Perf
 ro.sys.fw.dex2oat_thread_count=4
