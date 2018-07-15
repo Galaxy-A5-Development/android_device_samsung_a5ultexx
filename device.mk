@@ -20,6 +20,7 @@ $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
