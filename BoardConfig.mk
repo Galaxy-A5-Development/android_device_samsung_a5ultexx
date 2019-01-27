@@ -75,3 +75,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
 endif
+
+# Touchscreen
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/sec/sec_touchscreen/wake_gesture"
