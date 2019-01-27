@@ -59,6 +59,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a5u_eur_defconfig
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Power
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
