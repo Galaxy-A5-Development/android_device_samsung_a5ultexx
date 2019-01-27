@@ -67,6 +67,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a5u_eur_defconfig
 KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-7.2/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
+# Power
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
