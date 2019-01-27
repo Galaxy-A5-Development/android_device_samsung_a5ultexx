@@ -87,5 +87,8 @@ endif
 # Light
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Touchscreen
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/sec/sec_touchscreen/wake_gesture"
+
 # Inherit from proprietary files
 include vendor/samsung/a5ultexx/BoardConfigVendor.mk
