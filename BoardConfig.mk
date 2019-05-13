@@ -18,18 +18,15 @@
 FORCE_32_BIT := true
 
 # Inherit from msm8916-common
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+include device/samsung/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/yu/jalebi
-
-# Assertions
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+DEVICE_PATH := device/samsung/a5ultexx
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Camera
-BOARD_CAMERA_SENSORS := ov8865_qtech_baly_6c gc2355_blx_ffln_78
+BOARD_CAMERA_SENSORS := imx219 s5k5e3yx
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Filesystem
@@ -56,6 +53,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a5u_eur_defconfig
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Power
 TARGET_HAS_NO_POWER_STATS := true
 
@@ -75,9 +75,3 @@ endif
 
 # Wi-Fi
 TARGET_PROVIDES_WCNSS_QMI := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
-# Inherit from proprietary files
-include vendor/yu/jalebi/BoardConfigVendor.mk

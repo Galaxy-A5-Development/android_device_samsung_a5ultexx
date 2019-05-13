@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=jalebi
-VENDOR=yu
+DEVICE=a5ultexx
+VENDOR=samsung
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
