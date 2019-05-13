@@ -62,6 +62,3 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
 endif
-
-# Wi-Fi
-TARGET_PROVIDES_WCNSS_QMI := true
