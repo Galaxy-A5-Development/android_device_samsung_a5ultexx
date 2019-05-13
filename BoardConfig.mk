@@ -76,5 +76,8 @@ endif
 # Wi-Fi
 TARGET_PROVIDES_WCNSS_QMI := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Inherit from proprietary files
 include vendor/yu/jalebi/BoardConfigVendor.mk
