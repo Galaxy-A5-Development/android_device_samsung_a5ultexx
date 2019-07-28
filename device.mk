@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     librilutils \
     rild
 
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac
+
 # Display
 PRODUCT_PACKAGES += \
     libjni_livedisplay
