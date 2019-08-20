@@ -1,0 +1,28 @@
+# Audio
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=96m
+dalvik.vm.heapsize=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
+# Display
+ro.qualcomm.cabl=0
+ro.qualcomm.svi=1
+ro.sf.lcd_density=240
+
+# Perf
+ro.sys.fw.dex2oat_thread_count=4
+
+# Radio
+ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
+ril.ecclist1=000,08,100,101,102,110,112,118,119,120,122,911,999
+
+#HW keys
+qemu.hw.mainkeys=1
