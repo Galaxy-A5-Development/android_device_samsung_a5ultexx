@@ -22,6 +22,9 @@ include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/a5ultexx
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,a5lte,a5ltexx,a53gxx,a53g,a5ltedd,a5ultektt,a5ultelgt,a5lteub,a5ultekx,a5ulteskt,a5ultebmc,a5ultedv,a5ltezt
+
 # Audio
 AUDIO_FEATURE_ENABLED_AUDIOSPHERE := true
 USE_CUSTOM_MIXER_PATHS := true
@@ -44,6 +47,11 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2336096256
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12775813120
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_a5
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a5
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a5u_eur_defconfig
