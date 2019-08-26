@@ -21,6 +21,9 @@ include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/a5ultexx
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,a5lte,a5ltexx,a53gxx,a53g,a5ltedd,a5ultektt,a5ultelgt,a5lteub,a5ultekx,a5ulteskt,a5ultebmc,a5ultedv,a5ltezt
+
 # Audio
 USE_CUSTOM_MIXER_PATHS := true
 USE_CUSTOM_AUDIO_PLATFORM_INFO := true
@@ -40,7 +43,9 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Init
-TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(DEVICE_PATH)/init/init_a5.cpp
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_a5
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a5
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a5u_eur_defconfig
@@ -66,7 +71,7 @@ ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
 endif
 
-#Light
+# Light
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Inherit from proprietary files
