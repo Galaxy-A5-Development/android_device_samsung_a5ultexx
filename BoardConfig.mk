@@ -21,6 +21,7 @@ include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 # Allow overriding commands during build
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
 
 DEVICE_PATH := device/samsung/a5ultexx
 
