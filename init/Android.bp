@@ -1,0 +1,13 @@
+cc_library_static {
+    name: "libinit_a5",
+    recovery_available: true,
+
+    cpp_std: "c++17",
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init",
+    ],
+
+    srcs: ["init_a5.cpp"],
+    static_libs: ["libbase"],
+}
