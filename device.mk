@@ -51,9 +51,9 @@ TARGET_SCREEN_WIDTH := 720
 
 # RIL
 PRODUCT_PACKAGES += \
-	libril \
-	librilutils \
-	rild
+    libril \
+    librilutils \
+    rild
 
 # Display
 PRODUCT_PACKAGES += \
@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc
 
+# InputDisabler
+PRODUCT_PACKAGES += \
+    InputDisabler
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
@@ -72,10 +76,10 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
-	$(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-	$(LOCAL_PATH)/configs/nfc/libnfc-sec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec.conf \
-	$(LOCAL_PATH)/configs/nfc/libnfc-sec-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-hal.conf
+    $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-sec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-sec-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-hal.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
@@ -83,13 +87,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml
 
 PRODUCT_PACKAGES += \
-	libnfc-nci \
-	libnfc_nci_jni \
-	NfcNci \
-	Tag \
-	com.android.nfc_extras \
-	android.hardware.nfc@1.0-impl \
-	android.hardware.nfc@1.0-service \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag \
+    com.android.nfc_extras \
+    android.hardware.nfc@1.0-impl \
+    android.hardware.nfc@1.0-service \
     vendor.samsung.hardware.nfc@1.0-service.rc
 
 # USB ID
