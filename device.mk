@@ -83,10 +83,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc
 
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
-
 # InputDisabler
 PRODUCT_PACKAGES += \
     InputDisabler
